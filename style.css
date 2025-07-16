@@ -51,3 +51,10 @@ div {
   box-shadow: 2px 2px 2px 2px gray; /* 陰影 */
   /* margin: 0 auto; */
 }
+.cercle {
+  background: #fd345f;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  line-height: 100px;
+}
