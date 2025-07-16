@@ -86,6 +86,7 @@ div {
   /* bottom: 10px; */
   right: 10px;
   transform: translateX(10px);
+  transition: all 0.3s ease;
 }
 .message:after {
   content: attr(data-count);
@@ -94,6 +95,14 @@ div {
   right: -5px;
   font-size: 0.5rem;
   color: red;
+}
+.message:hover {
+  padding: 3px 20px;
+}
+.message.move {
+  right: 50%;
+  opacity: 0;
+  transform: translateX(50%);
 }
 .box {
   width: 100px;
