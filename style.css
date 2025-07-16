@@ -34,9 +34,14 @@ div {
 .my-btn {
   background-color: aqua; /* 背景 */
   text-align: center; /* 文字水平置中 */
-  padding: 10px; /* 內距 */
+  vertical-align: middle; /* 文字垂直置中 */
+  /* padding: 10px; 內距 */
+  /* padding-top: 15px; */
+  /* padding: 15px 10px 5px 20px; 上 右 下 左 */
+  padding: 10px 20px; /* 上下 左右 */
   border-radius: 20px; /* 圓角 */
   font-weight: bold; /* 字體粗細 */
   width: 100px; /* 寬度 */
+  /* height: 100px; 高度 */
   box-shadow: 2px 2px 2px 2px gray; /* 陰影 */
 }
