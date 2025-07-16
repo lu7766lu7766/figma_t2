@@ -33,10 +33,12 @@ div {
 }
 .my-btn {
   /* background-color: aqua; 背景 */
-  background-image: url(./1.png);
+  /* background-image: url(./1.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
+  background-size: contain;
+  background: url(./1.png) center no-repeat;
   text-align: center; /* 文字水平置中 */
   vertical-align: middle; /* 文字垂直置中 */
   /* padding: 10px; 內距 */
@@ -48,8 +50,13 @@ div {
   font-weight: 900; /* 字體粗細 */
   width: 100px; /* 寬度 */
   height: 50px; /* 高度*/
-  box-shadow: 2px 2px 2px 2px gray; /* 陰影 */
+  /* box-shadow: 2px 2px 2px 2px gray; 陰影 */
   /* margin: 0 auto; */
+  border: 1px solid #fd345f;
+  /* border-width: 1px;
+  border-color: #fd345f;
+  border-style: solid; */
+  /* border-style: ; */
 }
 .cercle {
   background: #fd345f;
