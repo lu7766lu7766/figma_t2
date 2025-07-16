@@ -31,3 +31,12 @@ div {
 .ranbow-linear-gradient {
   background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
 }
+.my-btn {
+  background-color: aqua; /* 背景 */
+  text-align: center; /* 文字水平置中 */
+  padding: 10px; /* 內距 */
+  border-radius: 20px; /* 圓角 */
+  font-weight: bold; /* 字體粗細 */
+  width: 100px; /* 寬度 */
+  box-shadow: 2px 2px 2px 2px gray; /* 陰影 */
+}
