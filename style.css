@@ -32,16 +32,22 @@ div {
   background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
 }
 .my-btn {
-  background-color: aqua; /* 背景 */
+  /* background-color: aqua; 背景 */
+  background-image: url(./1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center; /* 文字水平置中 */
   vertical-align: middle; /* 文字垂直置中 */
   /* padding: 10px; 內距 */
   /* padding-top: 15px; */
   /* padding: 15px 10px 5px 20px; 上 右 下 左 */
   padding: 10px 20px; /* 上下 左右 */
+  margin: 10px; /* 外距 */
   border-radius: 20px; /* 圓角 */
-  font-weight: bold; /* 字體粗細 */
+  font-weight: 900; /* 字體粗細 */
   width: 100px; /* 寬度 */
-  /* height: 100px; 高度 */
+  height: 50px; /* 高度*/
   box-shadow: 2px 2px 2px 2px gray; /* 陰影 */
+  /* margin: 0 auto; */
 }
