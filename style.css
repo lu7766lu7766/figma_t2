@@ -88,7 +88,7 @@ div {
   transform: translateX(10px);
 }
 .message:after {
-  content: "100";
+  content: attr(data-count);
   position: absolute;
   top: -5px;
   right: -5px;
