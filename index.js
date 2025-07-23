@@ -42,12 +42,17 @@ let b = 20
 // console.log(6 / 2)
 // console.log(5 % 2)
 
-if (a == 10) {
-  console.log("a is 10")
-} else if (a == 11) {
-  console.log("a is 11")
-} else if (a == 15) {
-  console.log("a is 15")
-} else {
-  console.log("a is not equal 10 and 15")
+// if (a == 10) {
+//   console.log("a is 10")
+// } else if (a == 11) {
+//   console.log("a is 11")
+// } else if (a == 15) {
+//   console.log("a is 15")
+// } else {
+//   console.log("a is not equal 10 and 15")
+// }
+
+for (let i = 0; i < 10; i++) {
+  console.log(i)
 }
+console.log("for loop end")
