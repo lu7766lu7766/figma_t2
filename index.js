@@ -36,6 +36,7 @@ let b = 20
 
 // 算術運算子
 // + - * / %
+// console.log("1" + "2")
 // console.log(1 + 2)
 // console.log(2 - 1)
 // console.log(2 * 3)
@@ -52,7 +53,21 @@ let b = 20
 //   console.log("a is not equal 10 and 15")
 // }
 
-for (let i = 0; i < 10; i++) {
-  console.log(i)
+// for (let i = 0; i < 10; i++) {
+//   console.log(i)
+// }
+// console.log("for loop end")
+
+let double = function (num1, num2) {
+  // num = num || 1 // 如果沒有傳入參數，預設為 1
+  return num1 * 2
 }
-console.log("for loop end")
+let c = double(2, 3) // 4
+console.log(c)
+let sayMyName = function (name) {
+  console.log("My name is " + name)
+}
+sayMyName("jac")
+sayMyName("mary")
+sayMyName("ming")
+sayMyName("john")
