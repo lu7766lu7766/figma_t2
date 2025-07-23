@@ -25,10 +25,11 @@ false
 // //
 // console.log(a, b)
 
-// == != && || 邏輯運算子
+// == != && || > < 邏輯運算子
 let a = 10
 let b = 20
 console.log(a == 10)
 console.log(a != 10)
 console.log(a == 10 && b == 20)
 console.log(a == 10 || b == 10)
+console.log(a <= 10 && b >= 20)
