@@ -28,16 +28,26 @@ false
 // == != && || > < 邏輯運算子
 let a = 10
 let b = 20
-console.log(a == 10)
-console.log(a != 10)
-console.log(a == 10 && b == 20)
-console.log(a == 10 || b == 10)
-console.log(a <= 10 && b >= 20)
+// console.log(a == 10)
+// console.log(a != 10)
+// console.log(a == 10 && b == 20)
+// console.log(a == 10 || b == 10)
+// console.log(a <= 10 && b >= 20)
 
 // 算術運算子
 // + - * / %
-console.log(1 + 2)
-console.log(2 - 1)
-console.log(2 * 3)
-console.log(6 / 2)
-console.log(5 % 2)
+// console.log(1 + 2)
+// console.log(2 - 1)
+// console.log(2 * 3)
+// console.log(6 / 2)
+// console.log(5 % 2)
+
+if (a == 10) {
+  console.log("a is 10")
+} else if (a == 11) {
+  console.log("a is 11")
+} else if (a == 15) {
+  console.log("a is 15")
+} else {
+  console.log("a is not equal 10 and 15")
+}
