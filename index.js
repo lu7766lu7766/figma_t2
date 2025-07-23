@@ -33,3 +33,11 @@ console.log(a != 10)
 console.log(a == 10 && b == 20)
 console.log(a == 10 || b == 10)
 console.log(a <= 10 && b >= 20)
+
+// 算術運算子
+// + - * / %
+console.log(1 + 2)
+console.log(2 - 1)
+console.log(2 * 3)
+console.log(6 / 2)
+console.log(5 % 2)
