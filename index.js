@@ -95,6 +95,13 @@ let b = 20
 // console.log(isTriangle(1, 2, 3)) // false
 // console.log(isTriangle(3, 4, 5)) // true
 
-const countBMI = function (height, weight) {
-  // 體重 / 身高平方(M)
-}
+// const countBMI = function (height, weight) {
+//   // 體重 / 身高平方(M)
+//   return weight / (height * height)
+// }
+// let bmi = countBMI(1.7, 60)
+// console.log(bmi)
+// console.log(countBMI(1.7, 60))
+
+// 判斷大小的函式
+const whichIsBig = function (a, b) {}
