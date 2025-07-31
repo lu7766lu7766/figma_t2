@@ -113,4 +113,12 @@ let b = 20
 // }
 // whichIsBig(1, 2)
 
+// 成績判斷
+// 95-100 return A+
+// 90-94 return A
+// 80-89 return B
+// 70-79 return C
+// 0-69 return D
+const checkScore = function (score) {}
+
 // 99乘法表
