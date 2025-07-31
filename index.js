@@ -77,7 +77,17 @@ window.onload = function () {
   document.querySelector("#year_btn").addEventListener("click", function () {
     const year = parseInt(document.querySelector("#year").value)
     // 該年份為400的倍數，或者為4的倍數，但不可以是100的倍數
+    let result
+    if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
+      result = "閏年"
+    } else {
+      result = "不是閏年"
+    }
     console.log(year)
-    document.querySelector("#answer").innerHTML = year
+    document.querySelector("#answer").innerHTML = result
   })
 }
+
+const isTriangle = function (a, b, c) {}
+isTriangle(1, 2, 3) // false
+isTriangle(3, 4, 5) // true
