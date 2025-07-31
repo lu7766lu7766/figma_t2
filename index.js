@@ -72,22 +72,29 @@ let b = 20
 // sayMyName("ming")
 // sayMyName("john")
 // console.log(document.querySelector("#year"))
-window.onload = function () {
-  console.log(document.querySelector("#year"))
-  document.querySelector("#year_btn").addEventListener("click", function () {
-    const year = parseInt(document.querySelector("#year").value)
-    // 該年份為400的倍數，或者為4的倍數，但不可以是100的倍數
-    let result
-    if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
-      result = "閏年"
-    } else {
-      result = "不是閏年"
-    }
-    console.log(year)
-    document.querySelector("#answer").innerHTML = result
-  })
-}
+// window.onload = function () {
+//   console.log(document.querySelector("#year"))
+//   document.querySelector("#year_btn").addEventListener("click", function () {
+//     const year = parseInt(document.querySelector("#year").value)
+//     // 該年份為400的倍數，或者為4的倍數，但不可以是100的倍數
+//     let result
+//     if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
+//       result = "閏年"
+//     } else {
+//       result = "不是閏年"
+//     }
+//     console.log(year)
+//     document.querySelector("#answer").innerHTML = result
+//   })
+// }
 
-const isTriangle = function (a, b, c) {}
-isTriangle(1, 2, 3) // false
-isTriangle(3, 4, 5) // true
+// const isTriangle = function (a, b, c) {
+//   return a + b > c && a + c > b && b + c > a
+// }
+// // 三角形特性，兩邊相加大於第三邊
+// console.log(isTriangle(1, 2, 3)) // false
+// console.log(isTriangle(3, 4, 5)) // true
+
+const countBMI = function (height, weight) {
+  // 體重 / 身高平方(M)
+}
