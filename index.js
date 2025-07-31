@@ -104,4 +104,13 @@ let b = 20
 // console.log(countBMI(1.7, 60))
 
 // 判斷大小的函式
-const whichIsBig = function (a, b) {}
+// const whichIsBig = function (a, b) {
+//   if (a > b) {
+//     return a
+//   } else if (b > a) {
+//     return b
+//   }
+// }
+// whichIsBig(1, 2)
+
+// 99乘法表
