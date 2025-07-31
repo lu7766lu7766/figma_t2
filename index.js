@@ -58,16 +58,24 @@ let b = 20
 // }
 // console.log("for loop end")
 
-let double = function (num1, num2) {
-  // num = num || 1 // 如果沒有傳入參數，預設為 1
-  return num1 * 2
+// let double = function (num1, num2) {
+//   // num = num || 1 // 如果沒有傳入參數，預設為 1
+//   return num1 * 2
+// }
+// let c = double(2, 3) // 4
+// console.log(c)
+// let sayMyName = function (name) {
+//   console.log("My name is " + name)
+// }
+// sayMyName("jac")
+// sayMyName("mary")
+// sayMyName("ming")
+// sayMyName("john")
+window.onload = function () {
+  console.log(document.querySelector("#year"))
+  document.querySelector("#year_btn").addEventListener("click", function () {
+    const year = document.querySelector("#year").value
+    console.log(year)
+    document.querySelector("#answer").innerHTML = year
+  })
 }
-let c = double(2, 3) // 4
-console.log(c)
-let sayMyName = function (name) {
-  console.log("My name is " + name)
-}
-sayMyName("jac")
-sayMyName("mary")
-sayMyName("ming")
-sayMyName("john")
