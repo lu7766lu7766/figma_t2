@@ -71,10 +71,12 @@ let b = 20
 // sayMyName("mary")
 // sayMyName("ming")
 // sayMyName("john")
+// console.log(document.querySelector("#year"))
 window.onload = function () {
   console.log(document.querySelector("#year"))
   document.querySelector("#year_btn").addEventListener("click", function () {
-    const year = document.querySelector("#year").value
+    const year = parseInt(document.querySelector("#year").value)
+    // 該年份為400的倍數，或者為4的倍數，但不可以是100的倍數
     console.log(year)
     document.querySelector("#answer").innerHTML = year
   })
