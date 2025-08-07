@@ -119,6 +119,29 @@ let b = 20
 // 80-89 return B
 // 70-79 return C
 // 0-69 return D
-const checkScore = function (score) {}
+const checkScore = function (score) {
+  if (score >= 95 && score <= 100) {
+    return "A+"
+  }
+  if (score >= 90 && score <= 94) {
+    return "A"
+  }
+  if (score >= 80 && score <= 89) {
+    return "B"
+  }
+  if (score >= 70 && score <= 79) {
+    return "C"
+  }
+  if (score <= 69) {
+    return "D"
+  }
+}
 
 // 99乘法表
+for (let i = 1; i <= 9; i++) {
+  for (let j = 1; j <= 9; j++) {
+    // 2 * 3 = 6
+    // console.log(i + "*" + j + "=" + i * j)
+    console.log(`${i} * ${j} = ${i * j}`)
+  }
+}
