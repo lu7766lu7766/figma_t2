@@ -296,11 +296,11 @@ students.forEach(function (student) {
 //   }
 // }
 // console.log(result)
-console.log(
-  students.filter(function (student) {
-    return student.gender == "male"
-  })
-)
+// console.log(
+//   students.filter(function (student) {
+//     return student.gender == "male"
+//   })
+// )
 
 // map
 // const result = []
@@ -319,6 +319,14 @@ console.log(
 //   // console.log(new Date().getFullYear() - students[i].birthday.substring(0, 4))
 // }
 // console.log(result)
+console.log(
+  students.map(function (student) {
+    return {
+      ...student,
+      age: new Date().getFullYear() - student.birthday.substring(0, 4),
+    }
+  })
+)
 
 // reduce
 // let sum = 0
@@ -326,5 +334,10 @@ console.log(
 //   sum += new Date().getFullYear() - students[i].birthday.substring(0, 4)
 // }
 // console.log(sum)
+console.log(
+  students.reduce(function (sum, student) {
+    return sum + new Date().getFullYear() - student.birthday.substring(0, 4)
+  }, 0)
+)
 
 // console.log(JSON.parse(JSON.stringify(students)))
