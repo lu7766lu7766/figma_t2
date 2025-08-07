@@ -280,13 +280,46 @@ const students = [
     email: "zhiyuan.yang@email.com",
   },
 ]
-const result = []
+// forEach
 for (let i = 0; i < students.length; i++) {
-  if (students[i].gender == "male") {
-    result.push(students[i])
-  }
-  // console.log(students[i].name)
-  // students[i].sayName()
+  console.log(students[i].first_name)
 }
-console.log(result)
-// console.log(JSON.stringify(students))
+students.forEach(function (student) {
+  console.log(student.first_name)
+})
+
+// filter
+// const result = []
+// for (let i = 0; i < students.length; i++) {
+//   if (students[i].gender == "male") {
+//     result.push(students[i])
+//   }
+// }
+// console.log(result)
+
+// map
+// const result = []
+// for (let i = 0; i < students.length; i++) {
+//   result.push({
+//     // id: students[i].id,
+//     // first_name: students[i].first_name,
+//     // last_name: students[i].last_name,
+//     // gender: students[i].gender,
+//     // phone: students[i].phone,
+//     // birthday: students[i].birthday,
+//     // email: students[i].email,
+//     ...students[i],
+//     age: new Date().getFullYear() - students[i].birthday.substring(0, 4),
+//   })
+//   // console.log(new Date().getFullYear() - students[i].birthday.substring(0, 4))
+// }
+// console.log(result)
+
+// reduce
+// let sum = 0
+// for (let i = 0; i < students.length; i++) {
+//   sum += new Date().getFullYear() - students[i].birthday.substring(0, 4)
+// }
+// console.log(sum)
+
+// console.log(JSON.parse(JSON.stringify(students)))
