@@ -296,6 +296,11 @@ students.forEach(function (student) {
 //   }
 // }
 // console.log(result)
+console.log(
+  students.filter(function (student) {
+    return student.gender == "male"
+  })
+)
 
 // map
 // const result = []
