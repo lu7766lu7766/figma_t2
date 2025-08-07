@@ -352,4 +352,13 @@ fetch("https://tcgbusfs.blob.core.windows.net/dotapp/youbike/v2/youbike_immediat
   })
 
 // setInterval
+let timer = setInterval(function () {
+  console.log("setInterval")
+}, 1000)
 // setTimeout
+setTimeout(function () {
+  console.log("timeout")
+}, 1000)
+setTimeout(() => {
+  clearInterval(timer)
+}, 5000)
