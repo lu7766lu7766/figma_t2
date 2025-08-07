@@ -281,12 +281,12 @@ const students = [
   },
 ]
 // forEach
-for (let i = 0; i < students.length; i++) {
-  console.log(students[i].first_name)
-}
-students.forEach(function (student) {
-  console.log(student.first_name)
-})
+// for (let i = 0; i < students.length; i++) {
+//   console.log(students[i].first_name)
+// }
+// students.forEach(function (student) {
+//   console.log(student.first_name)
+// })
 
 // filter
 // const result = []
@@ -319,14 +319,14 @@ students.forEach(function (student) {
 //   // console.log(new Date().getFullYear() - students[i].birthday.substring(0, 4))
 // }
 // console.log(result)
-console.log(
-  students.map(function (student) {
-    return {
-      ...student,
-      age: new Date().getFullYear() - student.birthday.substring(0, 4),
-    }
-  })
-)
+// console.log(
+//   students.map(function (student) {
+//     return {
+//       ...student,
+//       age: new Date().getFullYear() - student.birthday.substring(0, 4),
+//     }
+//   })
+// )
 
 // reduce
 // let sum = 0
@@ -334,10 +334,22 @@ console.log(
 //   sum += new Date().getFullYear() - students[i].birthday.substring(0, 4)
 // }
 // console.log(sum)
-console.log(
-  students.reduce(function (sum, student) {
-    return sum + new Date().getFullYear() - student.birthday.substring(0, 4)
-  }, 0)
-)
+// console.log(
+//   students.reduce(function (sum, student) {
+//     return sum + new Date().getFullYear() - student.birthday.substring(0, 4)
+//   }, 0)
+// )
 
 // console.log(JSON.parse(JSON.stringify(students)))
+
+// fetch
+fetch("https://tcgbusfs.blob.core.windows.net/dotapp/youbike/v2/youbike_immediate.json")
+  .then(function (res) {
+    return res.json()
+  })
+  .then(function (json) {
+    console.log(json)
+  })
+
+// setInterval
+// setTimeout
