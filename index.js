@@ -190,22 +190,103 @@ console.log(
 // json
 const students = [
   {
-    name: "jac",
-    age: 21,
-    sayName: function () {
-      console.log(this.name)
-    },
+    id: 1,
+    last_name: "林",
+    first_name: "美玲",
+    gender: "female",
+    phone: "0912-345-678",
+    birthday: "1998-03-15",
+    email: "meiling.lin@email.com",
   },
   {
-    name: "mary",
-    age: 22,
-    sayName: function () {
-      console.log(`my name is ${this.name}`)
-    },
+    id: 2,
+    last_name: "王",
+    first_name: "俊傑",
+    gender: "male",
+    phone: "0923-456-789",
+    birthday: "1997-11-22",
+    email: "junjie.wang@email.com",
+  },
+  {
+    id: 3,
+    last_name: "張",
+    first_name: "雅婷",
+    gender: "female",
+    phone: "0934-567-890",
+    birthday: "1999-07-30",
+    email: "yating.zhang@email.com",
+  },
+  {
+    id: 4,
+    last_name: "李",
+    first_name: "建志",
+    gender: "male",
+    phone: "0945-678-901",
+    birthday: "1998-09-05",
+    email: "jianzhi.li@email.com",
+  },
+  {
+    id: 5,
+    last_name: "陳",
+    first_name: "佳蓉",
+    gender: "female",
+    phone: "0956-789-012",
+    birthday: "1997-05-18",
+    email: "jiarong.chen@email.com",
+  },
+  {
+    id: 6,
+    last_name: "黃",
+    first_name: "志明",
+    gender: "male",
+    phone: "0967-890-123",
+    birthday: "1999-01-10",
+    email: "zhiming.huang@email.com",
+  },
+  {
+    id: 7,
+    last_name: "吳",
+    first_name: "芳瑜",
+    gender: "female",
+    phone: "0978-901-234",
+    birthday: "1998-12-03",
+    email: "fangyu.wu@email.com",
+  },
+  {
+    id: 8,
+    last_name: "劉",
+    first_name: "家豪",
+    gender: "male",
+    phone: "0989-012-345",
+    birthday: "1997-08-20",
+    email: "jiahao.liu@email.com",
+  },
+  {
+    id: 9,
+    last_name: "蔡",
+    first_name: "雅琪",
+    gender: "female",
+    phone: "0990-123-456",
+    birthday: "1999-04-25",
+    email: "yaqi.cai@email.com",
+  },
+  {
+    id: 10,
+    last_name: "楊",
+    first_name: "志遠",
+    gender: "male",
+    phone: "0901-234-567",
+    birthday: "1998-06-12",
+    email: "zhiyuan.yang@email.com",
   },
 ]
+const result = []
 for (let i = 0; i < students.length; i++) {
+  if (students[i].gender == "male") {
+    result.push(students[i])
+  }
   // console.log(students[i].name)
-  students[i].sayName()
+  // students[i].sayName()
 }
+console.log(result)
 // console.log(JSON.stringify(students))
