@@ -119,29 +119,50 @@ let b = 20
 // 80-89 return B
 // 70-79 return C
 // 0-69 return D
-const checkScore = function (score) {
-  if (score >= 95 && score <= 100) {
-    return "A+"
-  }
-  if (score >= 90 && score <= 94) {
-    return "A"
-  }
-  if (score >= 80 && score <= 89) {
-    return "B"
-  }
-  if (score >= 70 && score <= 79) {
-    return "C"
-  }
-  if (score <= 69) {
-    return "D"
-  }
-}
+// const checkScore = function (score) {
+//   if (score >= 95 && score <= 100) {
+//     return "A+"
+//   }
+//   if (score >= 90 && score <= 94) {
+//     return "A"
+//   }
+//   if (score >= 80 && score <= 89) {
+//     return "B"
+//   }
+//   if (score >= 70 && score <= 79) {
+//     return "C"
+//   }
+//   if (score <= 69) {
+//     return "D"
+//   }
+// }
 
-// 99乘法表
-for (let i = 1; i <= 9; i++) {
-  for (let j = 1; j <= 9; j++) {
-    // 2 * 3 = 6
-    // console.log(i + "*" + j + "=" + i * j)
-    console.log(`${i} * ${j} = ${i * j}`)
-  }
-}
+// // 99乘法表
+// for (let i = 1; i <= 9; i++) {
+//   for (let j = 1; j <= 9; j++) {
+//     // 2 * 3 = 6
+//     // console.log(i + "*" + j + "=" + i * j)
+//     console.log(`${i} * ${j} = ${i * j}`)
+//   }
+// }
+// class Person {
+//   constructor(name, age) {
+//     this.name = name
+//     this.age = age
+//   }
+//   sayName() {
+//     console.log(this.name)
+//   }
+// }
+
+// const jac = new Person("jac", 20)
+// jac.sayName() // jac
+// const mary = new Person("mary", 21)
+// mary.sayName() // mary
+
+console.log("Hello world".length)
+console.log("Hello world".substring(0, 3))
+console.log("Hello world".toUpperCase())
+const word = "hello world"
+
+console.log(word.substring(0, 1).toUpperCase() + word.substring(1))
