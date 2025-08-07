@@ -169,3 +169,43 @@ console.log(
   word.substring(0, 1).toUpperCase() + // H
     word.substring(1, word.length) // ello world
 )
+
+// string
+// console.log("1,jac,wang,21;2,mary,yang,22".split(";"))
+
+// xml
+{
+  /* <students>
+  <student>
+    <firstname>jac</firstname>
+    <age>21</age>
+  </student>
+  <student>
+    <firstname>mary</firstname>
+    <age>22</age>
+  </student>
+</students> */
+}
+
+// json
+const students = [
+  {
+    name: "jac",
+    age: 21,
+    sayName: function () {
+      console.log(this.name)
+    },
+  },
+  {
+    name: "mary",
+    age: 22,
+    sayName: function () {
+      console.log(`my name is ${this.name}`)
+    },
+  },
+]
+for (let i = 0; i < students.length; i++) {
+  // console.log(students[i].name)
+  students[i].sayName()
+}
+// console.log(JSON.stringify(students))
