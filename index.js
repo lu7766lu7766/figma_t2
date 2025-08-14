@@ -343,100 +343,141 @@ const students = [
 // console.log(JSON.parse(JSON.stringify(students)))
 
 // fetch
-fetch("https://tcgbusfs.blob.core.windows.net/dotapp/youbike/v2/youbike_immediate.json")
-  .then(function (res) {
-    return res.json()
+// fetch("https://tcgbusfs.blob.core.windows.net/dotapp/youbike/v2/youbike_immediate.json")
+//   .then(function (res) {
+//     return res.json()
+//   })
+//   .then(function (json) {
+//     console.log(json)
+//   })
+
+// // setInterval
+// let timer = setInterval(function () {
+//   console.log("setInterval")
+// }, 1000)
+// // setTimeout
+// setTimeout(function () {
+//   console.log("timeout")
+// }, 1000)
+// setTimeout(() => {
+//   clearInterval(timer)
+// }, 5000)
+
+// window.onload = function () {
+//   const floatingSquare = document.querySelector("#floating-square")
+
+//   // 正方形目前的位置
+//   let currentX = 50
+//   let currentY = 50
+
+//   // 設定初始位置
+//   floatingSquare.style.left = currentX + "px"
+//   floatingSquare.style.top = currentY + "px"
+
+//   // 動畫變數
+//   let isAnimating = false // 是否正在動畫中
+
+//   // 簡單的動畫函數
+//   function moveToPosition(targetX, targetY) {
+//     // 如果已經在動畫中，就不執行新的動畫
+//     if (isAnimating) return
+
+//     isAnimating = true // 標記開始動畫
+
+//     // 計算需要移動的距離
+//     const startX = currentX
+//     const startY = currentY
+//     const distanceX = targetX - startX
+//     const distanceY = targetY - startY
+
+//     // 動畫設定
+//     let step = 0 // 目前動畫步驟
+//     const totalSteps = 30 // 總共要跑幾步（步數越多動畫越平滑）
+
+//     // 使用 setInterval 每隔一段時間移動一小步
+//     const animation = setInterval(function () {
+//       step++ // 增加步驟
+
+//       // 計算目前應該移動到哪裡（ease-out 效果）
+//       // 使用簡單的數學公式：每一步移動的距離會越來越小
+//       const progress = step / totalSteps // 進度 0 到 1
+//       const easeOutProgress = 1 - Math.pow(1 - progress, 3) // ease-out 曲線
+
+//       // 計算新位置
+//       currentX = startX + distanceX * easeOutProgress
+//       currentY = startY + distanceY * easeOutProgress
+
+//       // 移動正方形到新位置
+//       floatingSquare.style.left = currentX + "px"
+//       floatingSquare.style.top = currentY + "px"
+
+//       // 如果動畫完成了
+//       if (step >= totalSteps) {
+//         clearInterval(animation) // 停止動畫
+//         isAnimating = false // 標記動畫結束
+
+//         // 確保最終位置精確
+//         currentX = targetX
+//         currentY = targetY
+//         floatingSquare.style.left = currentX + "px"
+//         floatingSquare.style.top = currentY + "px"
+//       }
+//     }, 20) // 每 20 毫秒執行一次（約 50fps）
+//   }
+
+//   // 監聽滑鼠點擊
+//   document.addEventListener("click", function (event) {
+//     // 獲取點擊的位置
+//     const clickX = event.clientX
+//     const clickY = event.clientY
+
+//     // 計算正方形應該移動到的位置（讓正方形中心對準點擊位置）
+//     const squareSize = 50
+//     let targetX = clickX - squareSize / 2
+//     let targetY = clickY - squareSize / 2
+
+//     // 開始移動動畫
+//     moveToPosition(targetX, targetY)
+//   })
+// }
+
+// get users
+// fetch("http://localhost:3000/api/users", {
+//   method: "GET",
+// })
+//   .then((response) => {
+//     return response.json()
+//   })
+//   .then((data) => {
+//     console.log(data)
+//   })
+
+// get user by id
+// fetch("http://localhost:3000/api/users/1", {
+//   method: "GET",
+// })
+//   .then((response) => {
+//     return response.json()
+//   })
+//   .then((data) => {
+//     console.log(data)
+//   })
+
+// post students
+fetch("http://localhost:3000/api/students", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    first_name: "John",
+    last_name: "Doe",
+    gender: "male",
+    phone: "123-456-7890",
+    email: "Vh2o2@example.com",
+  }),
+})
+  .then((response) => {
+    return response.json()
   })
-  .then(function (json) {
-    console.log(json)
+  .then((data) => {
+    console.log(data)
   })
-
-// setInterval
-let timer = setInterval(function () {
-  console.log("setInterval")
-}, 1000)
-// setTimeout
-setTimeout(function () {
-  console.log("timeout")
-}, 1000)
-setTimeout(() => {
-  clearInterval(timer)
-}, 5000)
-
-window.onload = function () {
-  const floatingSquare = document.querySelector("#floating-square")
-
-  // 正方形目前的位置
-  let currentX = 50
-  let currentY = 50
-
-  // 設定初始位置
-  floatingSquare.style.left = currentX + "px"
-  floatingSquare.style.top = currentY + "px"
-
-  // 動畫變數
-  let isAnimating = false // 是否正在動畫中
-
-  // 簡單的動畫函數
-  function moveToPosition(targetX, targetY) {
-    // 如果已經在動畫中，就不執行新的動畫
-    if (isAnimating) return
-
-    isAnimating = true // 標記開始動畫
-
-    // 計算需要移動的距離
-    const startX = currentX
-    const startY = currentY
-    const distanceX = targetX - startX
-    const distanceY = targetY - startY
-
-    // 動畫設定
-    let step = 0 // 目前動畫步驟
-    const totalSteps = 30 // 總共要跑幾步（步數越多動畫越平滑）
-
-    // 使用 setInterval 每隔一段時間移動一小步
-    const animation = setInterval(function () {
-      step++ // 增加步驟
-
-      // 計算目前應該移動到哪裡（ease-out 效果）
-      // 使用簡單的數學公式：每一步移動的距離會越來越小
-      const progress = step / totalSteps // 進度 0 到 1
-      const easeOutProgress = 1 - Math.pow(1 - progress, 3) // ease-out 曲線
-
-      // 計算新位置
-      currentX = startX + distanceX * easeOutProgress
-      currentY = startY + distanceY * easeOutProgress
-
-      // 移動正方形到新位置
-      floatingSquare.style.left = currentX + "px"
-      floatingSquare.style.top = currentY + "px"
-
-      // 如果動畫完成了
-      if (step >= totalSteps) {
-        clearInterval(animation) // 停止動畫
-        isAnimating = false // 標記動畫結束
-
-        // 確保最終位置精確
-        currentX = targetX
-        currentY = targetY
-        floatingSquare.style.left = currentX + "px"
-        floatingSquare.style.top = currentY + "px"
-      }
-    }, 20) // 每 20 毫秒執行一次（約 50fps）
-  }
-
-  // 監聽滑鼠點擊
-  document.addEventListener("click", function (event) {
-    // 獲取點擊的位置
-    const clickX = event.clientX
-    const clickY = event.clientY
-
-    // 計算正方形應該移動到的位置（讓正方形中心對準點擊位置）
-    const squareSize = 50
-    let targetX = clickX - squareSize / 2
-    let targetY = clickY - squareSize / 2
-
-    // 開始移動動畫
-    moveToPosition(targetX, targetY)
-  })
-}
